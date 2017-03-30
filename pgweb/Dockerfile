@@ -6,9 +6,7 @@ ENV PGWEB_VERSION 0.9.6
 ENV BIND_ADDRESS 0.0.0.0
 ENV LISTEN_PORT 8080
 
-RUN apk-install ca-certificates && \
-  update-ca-certificates && \
-  cd /tmp && \
+RUN cd /tmp && \
   wget https://github.com/sosedoff/pgweb/releases/download/v$PGWEB_VERSION/pgweb_linux_amd64.zip && \
   unzip pgweb_linux_amd64.zip -d /usr/bin && \
   mv /usr/bin/pgweb_linux_amd64 /usr/bin/pgweb && \
