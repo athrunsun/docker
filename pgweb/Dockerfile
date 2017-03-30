@@ -1,13 +1,13 @@
 FROM gliderlabs/alpine
 MAINTAINER Bruce Sun <okampfer@gmail.com>
 
+ADD https://github.com/sosedoff/pgweb/releases/download/v0.9.6/pgweb_linux_amd64.zip /tmp/pgweb_linux_amd64.zip
 ADD entrypoint.sh /entrypoint.sh
-ENV PGWEB_VERSION 0.9.6
+
 ENV BIND_ADDRESS 0.0.0.0
 ENV LISTEN_PORT 8080
 
 RUN cd /tmp && \
-  wget https://github.com/sosedoff/pgweb/releases/download/v$PGWEB_VERSION/pgweb_linux_amd64.zip && \
   unzip pgweb_linux_amd64.zip -d /usr/bin && \
   mv /usr/bin/pgweb_linux_amd64 /usr/bin/pgweb && \
   rm -f pgweb_linux_amd64.zip
