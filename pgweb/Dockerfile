@@ -12,4 +12,4 @@ RUN cd /tmp && \
   mv /usr/bin/pgweb_linux_amd64 /usr/bin/pgweb && \
   rm -f pgweb_linux_amd64.zip
 
-ENTRYPOINT ['/entrypoint.sh']
+ENTRYPOINT ["/entrypoint.sh"]
