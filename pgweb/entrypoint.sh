@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-if [ $MULTIPLE_SESSIONS = '' ]]; then
+if [ $MULTIPLE_SESSIONS = '' ]; then
     if [ $SSL_MODE = '' ]; then
         /usr/bin/pgweb --bind=$BIND_ADDRESS --listen=$LISTEN_PORT --url postgres://$USER:$PASSWORD@$HOST:$PORT/$DATABASE
     else
