@@ -1,2 +1,2 @@
 # Custom Docker images
-See readmes of images in corresponding folders.
+See readmes in respective folders.
