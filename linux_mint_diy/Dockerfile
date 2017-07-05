@@ -1,8 +1,8 @@
-FROM ubuntu:16.04
+FROM vcatechnology/base-linux-mint:18
 MAINTAINER Bruce Sun <okampfer@gmail.com>
 
 RUN apt-get update && \
-        apt-get -y install sudo software-properties-common
+        apt-get -y install sudo
 
 RUN adduser --disabled-password --gecos '' athrun && \
         adduser athrun sudo
