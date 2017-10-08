@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine
+FROM gliderlabs/alpine:3.5
 MAINTAINER Bruce Sun <okampfer@gmail.com>
 
 ADD https://github.com/sosedoff/pgweb/releases/download/v0.9.6/pgweb_linux_amd64.zip /tmp/pgweb_linux_amd64.zip

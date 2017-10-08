@@ -1,4 +1,4 @@
-FROM python:alpine
+FROM python:3.5-alpine
 MAINTAINER Bruce Sun <okampfer@gmail.com>
 
 RUN buildDeps='build-base openssl' \

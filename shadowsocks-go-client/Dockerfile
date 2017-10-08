@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine
+FROM gliderlabs/alpine:3.5
 MAINTAINER Bruce Sun <okampfer@gmail.com>
 
 ADD https://github.com/shadowsocks/shadowsocks-go/releases/download/1.1.5/shadowsocks-local-linux64-1.1.5.gz /tmp/shadowsocks-client.gz

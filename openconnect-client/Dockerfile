@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.5
 MAINTAINER Bruce Sun <okampfer@gmail.com>
 
 ENV OC_VERSION=7.08
