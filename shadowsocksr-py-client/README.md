@@ -10,3 +10,19 @@ docker run --name [container_name] -d -p 10080:1080 --link [shadowsocksr_server_
 ```
 
 NOTE it is highly recommended that you store the shadowsocks password in an environment variable as shown above. This way the password will not show in plain text when you run `docker ps`.
+
+## Sample client json config
+```json
+{
+    "server": "127.0.0.1",
+    "local_address": "127.0.0.1",
+    "local_port": 1080,
+    "timeout": 300,
+    "workers": 1,
+    "server_port": 10080,
+    "password": "$SSRPASSWORD",
+    "method": "aes-256-cfb",
+    "obfs": "tls1.2_ticket_auth",
+    "protocol": "auth_aes128_sha1"
+}
+```
